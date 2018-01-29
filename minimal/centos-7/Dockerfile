@@ -1,4 +1,4 @@
-from centos:7
+FROM centos:7
 MAINTAINER SaltStack, Inc.
 
 # Install EPEL
@@ -15,7 +15,7 @@ RUN yum -y install --enablerepo=epel \
   python-crypto \
   python-msgpack \
   python-zmq \
-  python-setuptools \
+  python-setuptools
 
 RUN easy_install \
   jinja2 \
