@@ -2,7 +2,7 @@ FROM centos:7
 MAINTAINER SaltStack, Inc.
 
 # Install EPEL
-RUN rpm -Uvh --force http://mirrors.kernel.org/fedora-epel/7/x86_64/e/epel-release-7-9.noarch.rpm
+RUN yum -y install epel-release
 
 # Update Current Image
 RUN yum install -y libcom_err && yum update -y
